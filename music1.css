@@ -1,0 +1,136 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5b5757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Form Container */
+.login-container {
+    background: linear-gradient(45deg, #3b455a, #3d485b);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.login-container:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #f39c12;
+    border-radius: 2px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Form Fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border: 2px solid #f39c12;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.2);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Social Media Login Options */
+.social-login {
+    margin-top: 30px;
+}
+
+.social-login a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.social-login a.facebook {
+    background-color: #3b5998;
+}
+
+.social-login a.google {
+    background-color: #db4437;
+}
+
+.social-login a.twitter {
+    background-color: #1da1f2;
+}
+
+.social-login a:hover {
+    opacity: 0.8;
+}
+
+/* Error Message */
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

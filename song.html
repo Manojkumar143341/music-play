@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pro E-Commerce Website</title>
+    <link rel="stylesheet" href="song1.css"> 
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">ProShop</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="#index">Home</a>
+                <a href="#shop">trendings</a>
+                <a href="#about">About Us</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+
+                <!-- Dropdown for Categories -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="#electronics">Electronics</a>
+                        <a href="#fashion">Fashion</a>
+                        <a href="#home-goods">Home Goods</a>
+                        <a href="#sports">Sports</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search Products...">
+                <span class="search-icon">&#128269;</span>
+            </div>
+
+            <!-- User & Cart Icons -->
+            <div class="user-cart">
+                <a href="add audio">Post</a>
+                <a href="music.html">Login</a>
+                <a href="#signup">Sign Up</a>
+                <div class="cart-icon">
+                    <a href="#cart"><i class="fa fa-shopping-cart"></i></a>
+                    <span class="badge">3</span>
+                </div>
+            </div>
+
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="audios">
+        <div class="audio-player">
+            <div class="audio-title">
+                <h2>Track 1 - Sound Helix</h2>
+            </div>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="audio-player">
+            <div class="audio-title">
+                <h2>Track 2 - Relaxing Beat</h2>
+            </div>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+
+
+
+    <script>
+
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
